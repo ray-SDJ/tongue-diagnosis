@@ -1,0 +1,93 @@
+{% extends "base.html" %} {% block content %}
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-lg">
+        <div class="card-header bg-primary text-white">
+          <h2 class="mb-0">Tongue Diagnosis</h2>
+        </div>
+        <div class="card-body">
+          <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="upload-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#upload"
+                type="button"
+                role="tab"
+                aria-controls="upload"
+                aria-selected="true"
+              >
+                Upload Image
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="camera-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#camera"
+                type="button"
+                role="tab"
+                aria-controls="camera"
+                aria-selected="false"
+              >
+                Take Photo
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="upload"
+              role="tabpanel"
+              aria-labelledby="upload-tab"
+            >
+              <form id="upload-form" enctype="multipart/form-data">
+                <div class="mb-3">
+                  <label for="file-upload" class="form-label"
+                    >Choose an image</label
+                  >
+                  <input
+                    class="form-control"
+                    type="file"
+                    id="file-upload"
+                    name="file"
+                    accept="image/*"
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Upload and Analyze
+                </button>
+              </form>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="camera"
+              role="tabpanel"
+              aria-labelledby="camera-tab"
+            >
+              <div class="text-center">
+                <video
+                  id="video"
+                  width="100%"
+                  height="auto"
+                  autoplay
+                  class="mb-3 rounded"
+                ></video>
+                <button id="capture" class="btn btn-primary">
+                  Capture and Analyze
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="result" class="mt-4"></div>
+    </div>
+  </div>
+</div>
+<canvas id="canvas" style="display: none"></canvas>
+<script src="{{ url_for('static', filename='js/camera.js') }}"></script>
+{% endblock %}

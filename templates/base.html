@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tongue Diagnosis</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Tongue Diagnosis</h1>
+    </header>
+    <main>{% block content %}{% endblock %}</main>
+    <p>
+      In Traditional Chinese Medicine (TCM), tongue diagnosis is a diagnostic
+      technique where a practitioner examines the tongue's color, shape,
+      texture, and coating to gain insights into the body's overall health and
+      imbalances. The tongue is considered a "window" into the internal organs
+      and systems, reflecting their current state and functioning. What the
+      Tongue Reveals: Color: Variations in tongue color can indicate different
+      patterns of disharmony. For example, a pale tongue might suggest Qi or
+      Blood deficiency, while a red tongue could indicate Heat. Shape: The shape
+      and size of the tongue can offer clues about fluid balance and overall
+      vitality. A swollen tongue might indicate Dampness, while a thin or
+      withered tongue could signify Yin deficiency. Texture: The texture of the
+      tongue's surface can reveal underlying patterns. A dry tongue might be
+      associated with Yin deficiency or Heat, while a wet or greasy tongue could
+      suggest Dampness. Coating: The coating on the tongue, its color, and
+      thickness can provide information about the digestive system and the
+      presence of pathogens. A thick, yellow coating might indicate Damp-Heat,
+      while a thin, white coating could suggest Cold. Tongue Mapping: TCM
+      practitioners often use a map of the tongue, where different areas
+      correspond to specific organs and systems in the body. By observing
+      changes in different tongue regions, they can pinpoint which areas may be
+      affected by imbalances. For instance, the tip of the tongue is associated
+      with the Heart, the sides with the Liver, and the center with the Spleen
+      and Stomach. Significance in Acupuncture: Tongue diagnosis plays a crucial
+      role in acupuncture treatment. It helps practitioners identify the root
+      cause of a patient's health concerns and tailor treatment plans
+      accordingly. By understanding the patterns of disharmony reflected in the
+      tongue, acupuncturists can select appropriate acupuncture points and other
+      TCM modalities to restore balance and promote healing. Disclaimer: Tongue
+      diagnosis is a complex and nuanced practice that requires expertise. While
+      it can provide valuable information, it should not be used as a sole
+      diagnostic tool and should always be interpreted in conjunction with other
+      diagnostic methods and a thorough medical history.
+    </p>
+    <footer>
+      <p>&copy; 2024 Tongue Diagnosis</p>
+    </footer>
+  </body>
+</html>
