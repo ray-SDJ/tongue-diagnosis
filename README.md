@@ -31,15 +31,13 @@ The core of this application is a deep learning model built with TensorFlow and 
 3. Submit the image for analysis
 4. View the diagnosis results, including the predicted condition and confidence level
 
-## Contributing
-Contributions to improve the model accuracy, expand the dataset, or enhance the user interface are welcome. Please read `CONTRIBUTING.md` for details on our code of conduct and the process for submitting pull requests.
 
 ## License
 This project is licensed under the MIT License - see the `LICENSE.md` file for details.
 
 ## Acknowledgments
-- Thanks to [list any data sources, research papers, or inspirations]
-- Shoutout to the open-source community for the invaluable tools and libraries used in this project
+- Thanks to my girlfiend who will be the best acupuncturist in the world
+
 
 ## Disclaimer
 This tool is intended for educational and informational purposes only. It should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.
